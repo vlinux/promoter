@@ -65,7 +65,7 @@ receivers:
 
 在 global 下面可以配置全局属性，比如企业微信或者钉钉的密钥，S3 下面是一个对象存储（阿里云 OSS 也可以）配置，用来保存监控图标生成的图片。
 
-`receivers` 下面是配置的各种消息的接收器，可以在一个接收器中同时配置企业微信和钉钉，支持 `text` 和 `markdown` 两种格式，其中的 `name` 非常中，
+`receivers` 下面是配置的各种消息的接收器，可以在一个接收器中同时配置企业微信和钉钉，支持 `text` 和 `markdown` 两种格式，其中的 `name` 非常重要，
 比如这里名称叫`rcv1`，那么该接收器的 Webhook 地址为：`http://<promoter-url>/rcv1/send`，在 AlertManager Webhook 中需要配置该地址。
 
 > 需要注意企业微信的 Markdown 格式不支持直接展示图片
